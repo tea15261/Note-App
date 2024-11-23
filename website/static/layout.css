@@ -1,0 +1,8 @@
+.nav-link:focus, .nav-link:hover{
+    background-color: rgb(66, 159, 255);
+    border-radius: 5px;
+}
+
+.nav-item, .nav-link {
+    font-family: 'Oxygen', sans-serif;
+}
