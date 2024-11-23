@@ -4,7 +4,6 @@ def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = 'atiksh is a skibidi sigma'
 
-    # Import and register Blueprints
     from .views import views
     from .auth import auth
 
