@@ -3,8 +3,71 @@
 {% block title %}Sign Up{% endblock %}
 
 {% block styles %}
+<link rel="stylesheet" href="sign_up.css">
 {% endblock %}
 
 {% block content %}
-<h1>Sign up</h1>
+
+<form method="POST">
+    <h3 align="center" class="header mt-3">Sign Up</h3>
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input 
+            type="email" 
+            class="form-control" 
+            id="email" 
+            name="email" 
+            placeholder="Enter Email"
+        >
+    </div>
+    <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input 
+            type="text" 
+            class="form-control" 
+            id="firstName" 
+            name="firstName" 
+            placeholder="Enter First Name"
+        >
+    </div>
+    <div class="form-group">
+        <label for="password1" class="password">Password</label>
+        <input 
+            type="password" 
+            class="form-control" 
+            id="password1" 
+            name="password1" 
+            placeholder="Enter Password"
+        >
+    <div class="form-group">
+        <label for="password2" class="password">Confirm Password</label>
+        <input 
+            type="password" 
+            class="form-control" 
+            id="password2" 
+            name="password2" 
+            placeholder="Confirm Password"
+        >
+    </div>
+
+    <br>
+
+    <button type="submit" class="btn btn-primary">Sign Up</button>
+
+    <style>
+        .form-group{
+            margin-bottom: 10px;
+        }
+        label.password{
+            margin-top: 10px;
+        }
+    </style>
+
+</form>
+
+
+
+
+
+
 {% endblock %}
